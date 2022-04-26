@@ -11,9 +11,33 @@ html {
 
 /* Inicio */
 
+@keyframes animacion{
+    0%{
+        background-color: #853400;
+    }
+    25%{
+        background-color: #c06500;
+    }
+    50%{
+        background-color: #ff9800;
+    }
+    75%{
+        background-color: #ffcc50;
+    }
+    100%{
+        background-color: #ffff89;
+    }
+}
+
 nav a {
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 19px;
 }
 
 .ulGeneral {
@@ -25,14 +49,24 @@ nav a {
     list-style: none;
     margin-bottom: 5px;
     padding: 5px;
+    background-image: linear-gradient(to bottom, #ff9800, #ffcc50, #ffff89);
 }
+
+
 
 h1 {
     display: flex;
     justify-content: center;
     font-family: 'Permanent Marker', cursive;
-    background-color: #ffa43a;
-    margin-bottom: 7px;
+    background-color: #ff9800;
+    margin-bottom: 7px; 
+}
+
+h1:hover{
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
 }
 
 footer {
@@ -43,6 +77,7 @@ footer {
 }
 
 footer a {
+    color: black;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;
     padding: 10px;
@@ -97,6 +132,10 @@ footer a {
 
 /* Profesores */
 
+.divProfesores img:hover {
+    width: 110%;
+}
+
 .divProfesores {
     display: grid;
     grid-template-columns: repeat(3, 32%);
@@ -148,6 +187,11 @@ footer a {
 }
 
 /* Galeria */
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
 
 .galeria {
     width: 90%;
