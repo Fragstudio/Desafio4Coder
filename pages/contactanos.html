@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="ulGeneral">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quienes somos?</a></li>
+                <li><a href="profesores.html">Profesores</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="conciertos.html">Conciertos y actividades</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Titulo y formulario de contacto -->
+        <h1>Contactanos</h1>
+        <form>
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <!-- El Ul contiene las primeras secciones que el usuario puede rellenar previo al cuadro de texto -->
+                <ul class="ulForm">
+                    <li>
+                        <label class="ulFormLuno" for="nombre">Nombre:</label>
+                        <input class="ulFormIuno" type="text" name="nombre" placeholder="Escriba su nombre"> 
+                    </li>
+                    <li>
+                        <label class="ulFormLdos" for="apellido">Apellido:</label>
+                        <input class="ulFormIdos" type="text" name="apellido" placeholder="Escriba su apellido">
+                    </li>
+                    <li>
+                        <label class="ulFormLtres" for="email">Email:</label>
+                        <input class="ulFormItres" type="text" name="email" placeholder="Escriba su Email">
+                    </li>    
+                    <li>
+                        <select name="Motivo">
+                            <option value="motivo">Seleccione el motivo</option>
+                            <option value="inscripcion">Inscripciones</option>
+                            <option value="consultas">Consultas</option>
+                            <option value="reclamos">Reclamos</option>
+                        </select>
+                    </li>
+                </ul>
+                <!-- Cuadro de texto -->
+                <div class="divForm">Escribinos aqui</div>
+                <textarea class="textAreaForm" name="text" cols="100" rows="10" placeholder="Escriba aqui"></textarea>
+                <!-- checkbox y botones del formulario -->
+                <div class="formCheck"> 
+                    Acepta terminos de privacidad y uso de datos? 
+                    <input type="checkbox" name="check">
+                </div>
+                <ul class="ulFormDos">
+                    <li>
+                        <input class="ulFormDosIcuatro" type="submit" value="Enviar formulario">
+                    </li>
+                    <li>
+                        <input class="ulFormDosIcinco" type="reset" value="Limpiar Formulario">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <ol class="olGeneral">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="contactanos.html">Contactanos</a></li>
+            <li><a href="quienes-somos.html">Quienes somos?</a></li>
+        </ol>
+    </footer>    
+</body>
+</html>
